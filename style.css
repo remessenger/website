@@ -77,6 +77,12 @@ body {
     text-decoration: underline;
 }
 
+.container h1 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+}
+
 .container .main-card {
     background: #f7d250;
     padding: 15px;
@@ -167,6 +173,102 @@ body {
 .container .blog-post p {
     font-size: 16px;
     color: #000000;
+}
+
+.container .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    max-width: 960px;
+    padding: 0 15px;
+}
+
+.container .sign-up-how {
+    flex: 1;
+    max-width: 45%;
+    margin-right: 20px;
+}
+
+.container .sign-up-how ol li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container .separator {
+    width: 1px;
+    background-color: #e0e0e0;
+    margin-right: 20px;
+}
+
+.container .sign-in {
+    flex: 1;
+    max-width: 45%;
+}
+
+.container .sign-in form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container .sign-in label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container .sign-in input {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.container .sign-in button {
+    padding: 5px 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0063d4;
+    text-decoration: none;
+    font-size: 14px;
+    border-color: #ffffff80;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.container .sign-up {
+    margin-top: 15px;
+}
+
+.container .sign-up form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container .sign-up label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.container .sign-up input {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.container .sign-up button {
+    padding: 5px 10px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0063d4;
+    text-decoration: none;
+    font-size: 14px;
+    border-color: #ffffff80;
+    border-width: 1px;
+    border-style: solid;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .footer {

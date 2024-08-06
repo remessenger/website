@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>dev blog - remsgr</title>
+    <title>sign up - remsgr</title>
     <meta name="description"
         content="remessenger (remsgr) is a recreation of the MSN servers, not affiliated with Microsoft.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,48 +51,43 @@
     <div class="container">
         <div class="nav">
             <a href="index.html">Home</a>
-            <a href="devblog.html" class="active">Dev Blog</a>
+            <a href="devblog.html">Dev Blog</a>
             <a href="#">Download</a>
             <a href="https://discord.gg/rrbkCmWbyV">Discord</a>
         </div>
 
-        <div class="blog-posts">
-            <div class="blog-post" id="060820240033">
-                <a href="#060820240033" class="title-link">
-                    <h2>new website and new name :)</h2>
-                </a>
-                <h3>august 6th 2024</h3>
-                <p>hi everyone! lots of exciting things, first of all i've gotten MSN version up to 7.0 to be able to
-                    connect! and i'm gonna start working on newer versions now which is very very exciting
-                    :)<br><br>that's not all tho! you might've noticed... we changed name and logo! "xirk" didn't make a
-                    lot of sense and didn't represent what remsgr is at all lol, i feel like the new name fits the
-                    project wayyyy more :D<br><br>don't hesitate to join our <a
-                        href="https://discord.gg/rrbkCmWbyV">discord</a> for more updates by the way! this blog is not
-                    updated a lot, but i'm trying to update it more<br><br>thanks for reading this blog post :)</b></p>
-            </div>
-            <div class="blog-post" id="220720242051">
-                <a href="#220720242051" class="title-link">
-                    <h2>yes, xirk is alive and well</h2>
-                </a>
-                <h3>july 22nd 2024</h3>
-                <p>hello! <i>it's been a while...</i><br><br>i'm so sorry i left you hanging for so long, but xirk IS
-                    alive and well, i've just been busy working on other projects and also migrating from mysql to
-                    mongodb for xirk, i am also searching for devs and if you are interested don't hesitate to contact
-                    me: ppvris on discord or you can dm me on messengergeek (syrek), it'll speed up development if i
-                    have someone helping me :)<br><br>thanks for reading this dev post, see you in the next ones!
-                    <i>also an actual small update, i am working on MSNP10 &amp; higher now as the older versions are
-                        considered "done"</i></p>
-            </div>
-            <div class="blog-post" id="1606020240000">
-                <a href="#1606020240000" class="title-link">
-                    <h2>tweener authentication added!</h2>
-                </a>
-                <h3>june 16th 2024</h3>
-                <p>we have now implemented tweener authentication, which means you can login in versions such as msn 5.0
-                    &amp; also 6.0 (with MSNP9 only for now though since MSNP10 changes a lot and we still have to adapt
-                    that lol)</p>
-            </div>
+        <div class="sign-up">
+            <h1>sign up</h1>
+            <form action="#" method="post">
+                <label for="username" style="margin:0;">Username<span style="color:red;">*</span></label>
+                <label style="font-size:11px;color:#9e9e9e;">To sign in on MSN, you will need to use your username and then @remsgr.net, you can't have a custom domain.</label>
+                <input type="text" name="username" required>
+
+                <label for="displayname">Display Name</label>
+                <input type="text" name="displayname">
+
+                <label for="email" style="margin:0;">Email<span style="color:red;">*</span></label>
+                <label style="font-size:11px;color:#9e9e9e;">Only used in recovery cases (password lost, etc...)</label>
+                <input type="email" name="email" required>
+
+                <label for="password">Password<span style="color:red;">*</span></label>
+                <input type="password" name="password" required>
+
+                <label for="password2">Confirm Password<span style="color:red;">*</span></label>
+                <input type="password" name="password2" required>
+
+                <label for="legacypassword" style="margin:0;">Legacy Password</label>
+                <label style="font-size:11px;color:#9e9e9e;">This password is used to log into older versions (<4.7) of MSN, please note that legacy password are far less secure than regular passwords, use a different one.</label>
+                <input type="password" name="legacypassword">
+
+                <label><span style="color:red;">*</span> Required</label>
+
+                <label for="tos" style="font-size:12px;color:#9e9e9e;">By clicking Sign up, you agree to the <a href="#" style="color:#9e9e9e;">Terms of Service</a></label>
+
+                <button type="submit">Sign up</button>
+            </form>
         </div>
+        <a href="#" style="font-size:12px;color:#9e9e9e;">Already have an account? Sign in here.</a>
     </div>
 
     <div class="footer">
